@@ -58,3 +58,23 @@
     ```powershell
     Remove-Item -Path file.txt
     ```
+
+12. **Execute an External Program with Parameters:**
+    ```powershell
+    Start-Process -FilePath "program.exe" -ArgumentList "-param1 value1 -param2 value2"
+    ```
+
+13. **Capture Output of External Program:**
+    ```powershell
+    $output = Invoke-Expression -Command "program.exe -param1 value1 -param2 value2"
+    ```
+
+14. **Parse Text Output:**
+    ```powershell
+    $parsedOutput = $output | Where-Object { $_ -match "pattern" }
+    ```
+
+15. **Display Text Output:**
+    ```powershell
+    Write-Host "Output: $parsedOutput"
+    ```
