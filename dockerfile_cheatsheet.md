@@ -1,4 +1,4 @@
-A Dockerfile is a script used to create a Docker container image. Here's a Dockerfile cheatsheet to help you get started:
+A Dockerfile is a script used to create a Docker container image. 
 
 ```Dockerfile
 # Set the base image
@@ -80,5 +80,3 @@ COPY --from=build /app/artifact /app/artifact
 # (Useful for debugging, remove in production)
 RUN apt-get update && apt-get install -y package_name
 ```
-
-This cheatsheet covers the basic instructions and best practices for writing Dockerfiles. Remember to adapt these instructions to your specific use case and requirements. Additionally, it's a good practice to keep your Dockerfile simple and minimize the number of layers in your image to reduce its size.
